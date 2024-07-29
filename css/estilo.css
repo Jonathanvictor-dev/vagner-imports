@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte-principal: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 16px !important;
+}
+
+body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    font-family: var(--fonte-principal) !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #00000086;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #000000;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;
+}
+
+/* Cores do bg e texto modificadas */
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.text-primary {
+    color: #ca9d40 !important;
+}
+
+/* lista de rede sociais */
+
+.container-lista {
+    display: flex;
+    padding: 0 !important;
+    gap: 2rem;
+}
+
+.container-lista .lista-item {
+    list-style: none;
+}
+
+.container-lista .lista-item .lista-item-link {
+    color: #000000;
+    font-size: 3rem;
+    transition: .4s;
+}
+
+.container-lista .lista-item .lista-item-link:hover {
+    color: #ca9d40;
+}
+
+/* Imagens redes sociais */
+
+.container-img-redes-sociais {
+    width: 23%;
+}
+
+.container-img-redes-sociais img {
+    width: 100%;
+    transition: .4s;
+}
+
+.container-img-redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+.container-img-redes-sociais a {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 576px) {
+    .container-img-redes-sociais {
+        width: 46%;
+    }
+}
