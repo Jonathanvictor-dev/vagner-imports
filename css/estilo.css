@@ -87,8 +87,69 @@ body {
     opacity: 0.8;
 }
 
+/* Rodape */
+
+.container-lista-rodape {
+    display: flex;
+}
+
+.lista-rodape-contato,
+.lista-rodape-horario {
+    margin: 0  8rem 0 0 !important;
+    padding: 0 !important;
+}
+
+.lista-rodape-pagamento {
+    padding: 0 !important;
+}
+
+.lista-rodape-contato .lista-rodape-contato-item,
+.lista-rodape-horario .lista-rodape-horario-item,
+.lista-rodape-pagamento .lista-rodape-pagamento-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.lista-rodape-contato .lista-rodape-contato-item i,
+.lista-rodape-horario .lista-rodape-horario-item i ,
+.lista-rodape-pagamento .lista-rodape-pagamento-item i {
+    width: 1.5rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 576px) {
     .container-img-redes-sociais {
         width: 46%;
+    }
+
+    .container-lista-rodape {
+        flex-direction: column;
+    }
+
+    .lista-rodape-contato,
+    .lista-rodape-horario,
+    .lista-rodape-pagamento {
+        margin: 0 !important;
+        padding: 0 ;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-img-redes-sociais {
+        width: 46%;
+    }
+
+    .container-lista-rodape {
+        flex-direction: column;
+    }
+
+    .lista-rodape-contato,
+    .lista-rodape-horario,
+    .lista-rodape-pagamento {
+        margin: 0 !important;
+        padding: 0 ;
     }
 }
