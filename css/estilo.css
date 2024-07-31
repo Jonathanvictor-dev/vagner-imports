@@ -164,6 +164,10 @@ body {
 /* Ajuste do layout responsivo */
 
 @media screen and (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column !important;
+    }
+
     .container-img-redes-sociais {
         width: 46%;
     }
