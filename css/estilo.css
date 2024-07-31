@@ -14,6 +14,8 @@ body {
     font-family: var(--fonte-principal) !important;
 }
 
+/* Configuração do scroll */
+
 ::-webkit-scrollbar {
     width: 6px;
     background: #00000086;
@@ -24,18 +26,6 @@ body {
     background-color: #000000;
 }
 
-/* Navbar */
-
-.navbar {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;
-}
-
-/* main */
-
-.container-principal {
-    margin-top: 7rem !important;
-}
-
 /* Cores do bg e texto modificadas */
 
 .bg-dark {
@@ -44,6 +34,49 @@ body {
 
 .text-primary {
     color: #ca9d40 !important;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px !important;
+}
+
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.nav-link::before {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #ca9d40;
+    bottom: 2px;
+    left: 0;
+    transition: width .4s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    width: 100%;
+}
+
+/* main */
+
+.container-principal {
+    margin-top: 7rem !important;
+}
+
+.btn {
+    transition: .4s !important;
+}
+
+.btn:hover {
+    background-color: #ca9d40 !important;
+    color: #000000 !important;
 }
 
 /* lista de rede sociais */
@@ -119,6 +152,16 @@ body {
     width: 1.5rem;
     text-align: center;
 }
+
+.rodar-45deg {
+    transform: rotate(45deg);
+}
+
+.rodar-90deg {
+    transform: rotate(90deg);
+}
+
+/* Ajuste do layout responsivo */
 
 @media screen and (max-width: 576px) {
     .container-img-redes-sociais {
