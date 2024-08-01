@@ -9,9 +9,12 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF !important;
     color: #000000 !important;
     font-family: var(--fonte-principal) !important;
+    height: 100vh;
 }
 
 /* Configuração do scroll */
@@ -67,6 +70,9 @@ body {
 /* main */
 
 .container-principal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     margin-top: 7rem !important;
 }
 
