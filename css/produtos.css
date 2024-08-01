@@ -23,7 +23,8 @@
     white-space: nowrap;
 }
 
-.btn:hover {
+.btn:hover,
+.ativo {
     background-color: #000000 !important;
     color: #FFFFFF !important;
 }
@@ -33,6 +34,10 @@
 .card-body .btn:hover {
     background-color: #ca9d40 !important;
     color: #FFFFFF !important;
+}
+
+.img-fluid {
+    min-height: 100%;
 }
 
 .card-title {
