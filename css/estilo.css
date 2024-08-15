@@ -85,6 +85,92 @@ body {
     color: #000000 !important;
 }
 
+/* Avaliação google */
+
+.container-avaliacao-google {
+    background-image: url('../img/banner-02.png'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+}
+
+.container-avaliacao-google-item-icon {
+    font-size: 2rem;
+}
+
+.container-avaliacao-google-item-titulo {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Carrosel das marcas */
+
+.carrosel-marcas-track {
+    display: flex;
+    width: calc(100% * 2);
+    animation: slide 50s linear infinite;
+}
+
+.carrosel-marcas {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carrosel-marcas .carrosel-marcas-img {
+    width: 20rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+/* Carrossel de comentários */
+
+/* .container-com-carrossel .carousel-item {
+    display: flex;
+    justify-content: center;
+} */
+
+.comentario-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 22rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px !important;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-control-prev {
+    background-color: #000000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    background-color: #000000;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
 /* lista de rede sociais */
 
 .container-lista {
@@ -99,7 +185,7 @@ body {
 
 .container-lista .lista-item .lista-item-link {
     color: #000000;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: .4s;
 }
 
@@ -130,21 +216,35 @@ body {
 
 .container-lista-rodape {
     display: flex;
+    gap: 4rem;
 }
 
 .lista-rodape-contato,
-.lista-rodape-horario {
-    margin: 0  8rem 0 0 !important;
+.lista-rodape-horario,
+.lista-rodape-pagamento {
+    margin: 0 !important;
     padding: 0 !important;
 }
 
 .lista-rodape-pagamento {
-    padding: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.lista-rodape-pagamento .lista-rodape-pagamento-item-icon {
+    list-style: none;
+    margin-left: 0.3rem;
+}
+
+.lista-rodape-pagamento-item-icon img {
+    width: 3rem !important;
+    height: auto !important;
 }
 
 .lista-rodape-contato .lista-rodape-contato-item,
-.lista-rodape-horario .lista-rodape-horario-item,
-.lista-rodape-pagamento .lista-rodape-pagamento-item {
+.lista-rodape-horario .lista-rodape-horario-item{
     list-style: none;
     display: flex;
     align-items: center;
@@ -167,6 +267,30 @@ body {
     transform: rotate(90deg);
 }
 
+.rodape-direitos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-top: 2px solid #FFFFFF;
+}
+
+.rodape-direitos-titulo {
+    margin: 0 !important;
+    font-size: 0.8rem;
+}
+
+/* Animações */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 /* Ajuste do layout responsivo */
 
 @media screen and (max-width: 576px) {
@@ -174,8 +298,23 @@ body {
         flex-direction: column !important;
     }
 
+    .container-avaliacao-google {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-avaliacao-google-item {
+        margin: 0 !important;
+    }
+
     .container-img-redes-sociais {
         width: 46%;
+    }
+
+    .container-lista-rodape {
+        padding: 0 0.5rem;
     }
 
     .container-lista-rodape {
@@ -191,18 +330,34 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
     .container-img-redes-sociais {
         width: 46%;
     }
 
     .container-lista-rodape {
         flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem !important;
     }
 
-    .lista-rodape-contato,
-    .lista-rodape-horario,
-    .lista-rodape-pagamento {
+    .lista-rodape-contato h5,
+    .lista-rodape-horario h5,
+    .container-lista-rodape-pagamento h5 {
         margin: 0 !important;
         padding: 0 ;
     }
+
+    .comentario-card {
+        flex: 1 0 100%;
+        height: auto;
+    }
 }
+

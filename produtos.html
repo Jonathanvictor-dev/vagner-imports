@@ -17,37 +17,57 @@
 <body>
     <nav class="navbar navbar-expand-sm text-light bg-dark fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="img/logo-fundo-transparente.png" alt="Logo"
-                    style="width: 90px; height: 90px;"></a>
+            <a href="index.html" class="navbar-brand"><img src="img/logo-fundo-transparente.png" alt="Logo" style="width: 90px; height: 90px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar">
                 <i class="fa-solid fa-bars text-primary"></i>
             </button>
             <div class="collapse navbar-collapse" id="menuNavBar">
                 <div class="navbar-nav ms-auto">
-                    <a href="index.html"
-                        class="nav-link text-primary text-uppercase fw-bold position-relative">Início</a>
-                    <div class="dropdown">
-                        <a href="produtos.html"
-                            class="nav-link active dropdown-toggle text-primary d-flex align-items-center text-uppercase fw-bold position-relative"
-                            data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
-                        <ul class="dropdown-menu bg-dark">
-                            <li><a href="produtos.html" class="dropdown-item text-primary">Assistência técnica</a></li>
-                            <li><a href="produtos.html" class="dropdown-item text-primary">Curso de manutenção</a></li>
-                            <li><a href="produtos.html" class="dropdown-item text-primary">Iphones</a></li>
-                            <li><a href="produtos.html" class="dropdown-item text-primary">Importados</a></li>
-                        </ul>
-                    </div>
+                    <a href="index.html" class="nav-link text-primary text-uppercase fw-bold position-relative">Início</a>
+                    <a href="curso.html" class="nav-link text-primary text-uppercase fw-bold position-relative">Matricule-se já!</a>
+                    <a href="produtos.html" class="nav-link active text-primary text-uppercase fw-bold position-relative">Produtos</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <main class="container-principal mb-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner.png" class="d-block w-100" alt="slide 00">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-01.png" class="d-block w-100" alt="slide 01">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slide-02.png" class="d-block w-100" alt="slide 02">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <div class="container mt-5">
-            <ul class="categoria-lista d-flex">
-                <li id="categoria-tudo" class="categoria-lista-item btn btn-sm fw-bold text-uppercase btn btn-sm ativo">Tudo</li>
-                <li id="categoria-assistencia" class="categoria-lista-item btn btn-sm fw-bold text-uppercase">Assistência técnica</li>
-                <li id="categoria-curso" class="categoria-lista-item btn btn-sm fw-bold text-uppercase">Curso de manutenção</li>
+            <ul class="categoria-lista d-flex justify-content-center">
+                <li id="categoria-tudo" class="categoria-lista-item btn btn-sm fw-bold text-uppercase btn btn-sm ativo">
+                    Tudo</li>
+                <li id="categoria-assistencia" class="categoria-lista-item btn btn-sm fw-bold text-uppercase">
+                    Assistência técnica</li>
+                <li id="categoria-curso" class="categoria-lista-item btn btn-sm fw-bold text-uppercase">Curso de
+                    manutenção</li>
                 <li id="categoria-iphone" class="categoria-lista-item btn btn-sm fw-bold text-uppercase">Iphone</li>
                 <li id="categoria-importados" class="categoria-lista-item btn btn-sm fw-bold text-uppercase">Importados
                 </li>
@@ -65,7 +85,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase">Assistência técnica</h5>
+                                    <h5 class="card-title text-uppercase text-center">Assistência técnica</h5>
                                     <p class="card-text">Precisa de ajuda com seu dispositivo? Oferecemos assistência
                                         técnica especializada para resolver qualquer problema.</p>
                                     <a href="#" class="btn btn-sm text-light bg-dark"><i
@@ -103,7 +123,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase">Compre seu Smartphone</h5>
+                                    <h5 class="card-title text-uppercase text-center">Compre seu Smartphone</h5>
                                     <p class="card-text">Encontre o smartphone perfeito para você. Explore nossa seleção
                                         de modelos e aproveite ofertas exclusivas!</p>
                                     <a href="#" class="btn btn-sm text-light bg-dark"><i
@@ -122,7 +142,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase">IPhone usado como entrada</h5>
+                                    <h5 class="card-title text-uppercase text-center">IPhone usado como entrada</h5>
                                     <p class="card-text">Troque seu iPhone antigo por um iPhone XR ou superior.
                                         Condições especiais para aparelhos usados em bom estado!</p>
                                     <a href="#" class="btn btn-sm text-light bg-dark"><i
@@ -142,7 +162,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase">Produtos importados</h5>
+                                    <h5 class="card-title text-uppercase text-center">Produtos importados</h5>
                                     <p class="card-text">Explore nossa linha de produtos importados com qualidade e
                                         variedade. Encontre o que há de melhor no mercado internacional!</p>
                                     <a href="#" class="btn btn-sm text-light bg-dark"><i
@@ -161,7 +181,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-uppercase">Acessórios para Smartphone</h5>
+                                    <h5 class="card-title text-uppercase text-center">Acessórios para Smartphone</h5>
                                     <p class="card-text">Descubra acessórios essenciais para seu smartphone. Capas,
                                         carregadores e mais para melhorar sua experiência</p>
                                     <a href="#" class="btn btn-sm text-light bg-dark"><i
@@ -176,37 +196,43 @@
     </main>
 
     <footer class="d-flex flex-column justify-content-center text-light bg-dark">
-        <div class="container-lista-rodape d-flex pb-5 m-auto">
+        <div class="container-lista-rodape d-flex mb-5 m-auto">
             <ul class="lista-rodape-contato">
                 <h5 class="mt-5">Contato</h3>
-                    <li class="lista-rodape-contato-item"><i class="fa-solid fa-envelope"></i>teste@teste.com</li>
-                    <li class="lista-rodape-contato-item"><i class="fa-solid fa-phone"></i>(82) 9 9604-3922</li>
-                    <li class="lista-rodape-contato-item"><i class="fa-solid fa-map-location-dot"></i>Rua do comércio,
-                        663. Centro de Maceió</li>
-                    <li class="lista-rodape-contato-item"><i class="fa-solid fa-location-dot"></i></i>Rua Augusta(Rua
-                        das árvores), 81. Centro de Maceió</li>
+                <li class="lista-rodape-contato-item"><i class="fa-solid fa-envelope"></i>teste@teste.com</li>
+                <li class="lista-rodape-contato-item"><i class="fa-solid fa-phone"></i>(82) 9 9604-3922</li>
+                <li class="lista-rodape-contato-item"><i class="fa-solid fa-map-location-dot"></i>Rua do comércio, 663. Centro de Maceió</li>
+                <li class="lista-rodape-contato-item"><i class="fa-solid fa-location-dot"></i></i>Rua Augusta(Rua das árvores), 81. Centro de Maceió</li>
             </ul>
             <ul class="lista-rodape-horario">
                 <h5 class="mt-5">Horário de funcionamento</h3>
-                    <li class="lista-rodape-horario-item"><i class="fa-solid fa-clock"></i>Segunda à sexta: 10:00 às
-                        18:00</li>
-                    <li class="lista-rodape-horario-item"><i class="fa-solid fa-clock rodar-45deg"></i>Sábado: 10:00 às
-                        14:00</li>
-                    <li class="lista-rodape-horario-item"><i class="fa-solid fa-clock rodar-90deg"></i>Domingos e
-                        feriados: Fechado</li>
+                <li class="lista-rodape-horario-item"><i class="fa-solid fa-clock"></i>Segunda à sexta: 10:00 às 18:00</li>
+                <li class="lista-rodape-horario-item"><i class="fa-solid fa-clock rodar-45deg"></i>Sábado: 10:00 às 14:00</li>
+                <li class="lista-rodape-horario-item"><i class="fa-solid fa-clock rodar-90deg"></i>Domingos e feriados: Fechado</li>
             </ul>
-            <ul class="lista-rodape-pagamento">
-                <h5 class="mt-5">Formas de pagamento</h3>
-                    <li class="lista-rodape-pagamento-item"><i class="fa-solid fa-credit-card"></i>Crédito</li>
-                    <li class="lista-rodape-pagamento-item"><i class="fa-regular fa-credit-card"></i>Débito</li>
-                    <li class="lista-rodape-pagamento-item"><i class="fa-brands fa-pix"></i>PIX</li>
-            </ul>
+            <div class="container-lista-rodape-pagamento">
+                <h5 class="mt-5">Meios de pagamento</h3>
+                <ul class="lista-rodape-pagamento">
+                    <li class="lista-rodape-pagamento-item-icon"><img src="img/if-visa-2593666_86609.svg" alt="bandeira visa"></li>
+                    <li class="lista-rodape-pagamento-item-icon"><img src="img/1490135020-american-express_82257.svg" alt="bandeira american express"></li>
+                    <li class="lista-rodape-pagamento-item-icon"><img src="img/diners_payment_method_card_icon_142742.svg" alt="bandeiradiners"></li>
+                    <li class="lista-rodape-pagamento-item-icon"><img src="img/elo_payment_method_card_icon_142740.svg" alt="bandeira elo"></li>
+                    <li class="lista-rodape-pagamento-item-icon"><img src="img/hipercard_payment_method_card_icon_142739.svg" alt="bandeira hipercard"></li>
+                    <li class="lista-rodape-pagamento-item-icon"><img src="img/pix-106.svg" alt="bandeira pix"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape-direitos mb-3">
+            <p class="rodape-direitos-titulo p-3">&copy; 2024 - Todos os direitos reservados</p>
         </div>
         <div class="container-mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.928913581267!2d-35.7386593!3d-9.6611883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145241d7514df%3A0x661e369959a42e24!2sVagner%20Imports!5e0!3m2!1spt-BR!2sbr!4v1722369837172!5m2!1spt-BR!2sbr"
-                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.928913581267!2d-35.7386593!3d-9.6611883!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145241d7514df%3A0x661e369959a42e24!2sVagner%20Imports!5e0!3m2!1spt-BR!2sbr!4v1722369837172!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
     </footer>
