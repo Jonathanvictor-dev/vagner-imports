@@ -88,12 +88,13 @@ body {
 /* Avaliação google */
 
 .container-avaliacao-google {
-    background-image: url('../img/banner-02.png'); 
+    background-image: url('../img/parallax.png'); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20rem;
+    height: 24rem;
+    color: #FFFFFF;
 }
 
 .container-avaliacao-google-item-icon {
@@ -137,7 +138,6 @@ body {
     flex-direction: column;
     height: 100%;
     min-height: 22rem;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px !important;
     transition: box-shadow 0.3s ease-in-out;
 }
 
