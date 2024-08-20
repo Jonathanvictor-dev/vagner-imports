@@ -1,5 +1,32 @@
 const formsCadastro = document.querySelector('#formsCadastro');
 
+function formatCPF(cpf) {
+    // Remove qualquer caractere que não seja número
+    cpf = cpf.replace(/\D/g, "");
+    // Formata o CPF para o padrão XXX.XXX.XXX-XX
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    return cpf;
+}
+
+function formatTelefone(telefone) {
+    // Remove qualquer caractere que não seja número
+    telefone = telefone.replace(/\D/g, "");
+    // Formata o telefone para o padrão (XX) XXXXX-XXXX
+    telefone = telefone.replace(/(\d{2})(\d)/, "($1) $2");
+    telefone = telefone.replace(/(\d{5})(\d)/, "$1-$2");
+    return telefone;
+}
+
+document.getElementById('cpf').addEventListener('input', function () {
+    this.value = formatCPF(this.value);
+});
+
+document.getElementById('telefone').addEventListener('input', function () {
+    this.value = formatTelefone(this.value);
+});
+
 if (formsCadastro) {
     formsCadastro.addEventListener('submit', function(e) {
         e.preventDefault();

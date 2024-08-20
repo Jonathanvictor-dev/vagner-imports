@@ -263,15 +263,15 @@
             <form class="forms-cadastro" id="formsCadastro">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo">
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
                 </div>
                 <div class="mb-3">
                     <label for="cpf" class="form-label">CPF</label>
-                    <input type="number" class="form-control" id="cpf" placeholder="Digite seu CPF">
+                    <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" maxlength="14">
                 </div>
                 <div class="mb-3">
                     <label for="dataNascimento" class="form-label">Data de nascimento</label>
@@ -279,7 +279,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+                    <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" maxlength="15">
                 </div>
                 <button type="submit" class="btn text-light bg-dark">Cadastrar</button>
             </form>
@@ -328,6 +328,7 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.7/inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 

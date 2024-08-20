@@ -106,6 +106,29 @@ body {
     font-weight: 600;
 }
 
+/* Carrossel assistência tecnica */
+
+.container-assistencia-tecnica {
+    margin-top: -6rem !important;
+}
+
+.container-card-assistencia {
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.card-assistencia {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.carrosel-assistencia-tecnica-icon {
+    font-size: 3rem;
+}
+
 /* Carrosel das marcas */
 
 .carrosel-marcas-track {
@@ -298,6 +321,14 @@ body {
         flex-direction: column !important;
     }
 
+    .container-assistencia-tecnica {
+        margin-top: -4rem !important;
+    }
+
+    .container-assistencia-tecnica .row {
+        flex-direction: column !important;
+    }
+
     .container-avaliacao-google {
         background-image: url('../img/parallax-mobile.png'); 
         background-attachment: scroll;
@@ -335,6 +366,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .container-assistencia-tecnica {
+        margin-top: -4rem !important;
+    }
+
     .card-title {
         display: flex;
         align-items: center;
