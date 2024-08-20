@@ -2,3 +2,39 @@
     background-color: #000000;
     color: #FFFFFF;
 }
+
+.forms-cadastro {
+    width: 60%;
+    margin: 0 auto;  
+}
+
+.form-control:focus {
+    border: none !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
+}
+
+@media screen and (max-width: 480px) {
+    .lista-card-curso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 12rem !important;
+    }
+
+    .forms-cadastro {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lista-card-curso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+    }
+
+    .forms-cadastro {
+        width: 70%;
+    }
+}

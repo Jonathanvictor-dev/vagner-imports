@@ -272,7 +272,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-top: 2px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
 }
 
 .rodape-direitos-titulo {
@@ -322,10 +322,13 @@ body {
     }
 
     .lista-rodape-contato,
-    .lista-rodape-horario,
-    .lista-rodape-pagamento {
+    .lista-rodape-horario {
         margin: 0 !important;
         padding: 0 ;
+    }
+
+    .lista-rodape-pagamento {
+        margin-top: 0.3rem !important;
     }
 }
 
@@ -336,6 +339,11 @@ body {
 
     .card-text {
         font-size: 0.9rem;
+    }
+
+    .comentario-card {
+        flex: 1 0 100%;
+        height: auto;
     }
 
     .container-img-redes-sociais {
@@ -355,9 +363,8 @@ body {
         padding: 0 ;
     }
 
-    .comentario-card {
-        flex: 1 0 100%;
-        height: auto;
+    .lista-rodape-pagamento {
+        margin-top: 0.3rem !important;
     }
 }
 

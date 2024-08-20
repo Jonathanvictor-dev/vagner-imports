@@ -14,7 +14,7 @@
 
 .categoria-lista::-webkit-scrollbar-thumb {
     height: 2px;
-    opacity: 0.8;
+    background-color: transparent;
 }
 
 .categoria-lista .categoria-lista-item {
