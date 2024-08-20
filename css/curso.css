@@ -1,6 +1,12 @@
 .lista-card-curso {
     background-color: #000000;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.lista-card-curso:hover {
+    transform: translateY(-0.5rem);
 }
 
 .forms-cadastro {
