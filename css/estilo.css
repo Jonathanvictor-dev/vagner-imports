@@ -299,6 +299,8 @@ body {
     }
 
     .container-avaliacao-google {
+        background-image: url('../img/parallax-mobile.png'); 
+        background-attachment: scroll;
         display: flex;
         flex-direction: column;
         align-items: center;
