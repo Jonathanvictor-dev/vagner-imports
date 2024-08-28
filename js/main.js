@@ -25,7 +25,7 @@ if (document.getElementById('telefone')) {
     document.getElementById('telefone').addEventListener('input', function () {
         this.value = formatTelefone(this.value);
     });
-}
+};
 
 if (formsCadastro) {
     formsCadastro.addEventListener('submit', function(e) {
