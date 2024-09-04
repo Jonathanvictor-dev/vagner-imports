@@ -14,7 +14,7 @@ body {
     background-color: #FFFFFF !important;
     color: #000000 !important;
     font-family: var(--fonte-principal) !important;
-    height: 100vh;
+    height: 100vh !important;
 }
 
 /* Configuração do scroll */
@@ -72,7 +72,7 @@ body {
 .container-principal {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 !important;
     margin-top: 7rem !important;
 }
 
@@ -355,6 +355,14 @@ body {
         flex-direction: column !important;
     }
 
+    .dropdown {
+        position: relative !important;
+    }
+
+    .dropdown-menu {
+        position: absolute !important;
+    }
+
     .container-assistencia-tecnica {
         margin-top: -4rem !important;
     }
@@ -400,6 +408,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    a.nav-link,
+    button.nav-link {
+        font-size: 0.7rem !important;
+    }
+
     .container-assistencia-tecnica {
         margin-top: -4rem !important;
     }
