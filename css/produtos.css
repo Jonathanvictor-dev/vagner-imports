@@ -56,3 +56,88 @@
 .card-item-assistencia-tecnica {
     border: none !important;
 }
+
+.seletor-personalizado-container {
+    position: relative;
+  }
+  
+  .seletor-personalizado {
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+  }
+  
+  .seletor-placeholder {
+    display: block;
+    padding-right: 1rem;
+    position: relative;
+  }
+  
+
+  .seletor-personalizado .fa-solid {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+  }
+  
+  .seletor-pesquisa-container {
+    display: none;
+    margin: 0.5rem;
+  }
+  
+  .seletor-pesquisa {
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .seletor-opcoes {
+    display: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #ccc;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 150px;
+    overflow-y: auto;
+  }
+  
+  .seletor-opcoes .opcao {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .seletor-opcoes .opcao:hover {
+    background-color: #ddd;
+  }
+  
+  .seletor-personalizado.ativo .seletor-opcoes,
+  .seletor-personalizado.ativo .seletor-pesquisa-container {
+    display: block;
+  }
+
+  .seta-cima {
+    display: none;
+  }
+  
+.seletor-personalizado.ativo .seta-baixo {
+    display: none;
+  }
+  
+  .seletor-personalizado.ativo .seta-cima {
+    display: inline;
+  }

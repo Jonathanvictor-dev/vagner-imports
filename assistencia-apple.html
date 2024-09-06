@@ -53,18 +53,30 @@
             </ul>
         </div>
         <div class="container mt-5">
-            <div class="row">
+            <div class="row gy-5">
                 <div class="col-12 col-lg-3" data-item="macbook">
                     <div class="card card-item-assistencia-tecnica">
                         <img src="./img/macbook.png" class="card-img-top" alt="Imagem do macbook">
                         <div class="card-body">
-                          <h5 class="card-title">MacBook</h5>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected class="text-center">Selecione o modelo</option>
-                            <option value="1" class="text-center">One</option>
-                            <option value="2" class="text-center">Two</option>
-                            <option value="3" class="text-center">Three</option>
-                          </select>
+                          <h5 class="card-title text-uppercase">MacBook</h5>
+                          <div class="seletor-personalizado-container">
+                            <div class="seletor-personalizado" id="seletorPersonalizado">
+                              <span class="seletor-placeholder">Selecione o modelo</span>
+                              <i class="fa-solid fa-chevron-down seta-baixo"></i>
+                              <i class="fa-solid fa-angle-up seta-cima"></i>
+                              <ul class="seletor-opcoes">
+                                <div class="seletor-pesquisa-container">
+                                    <input type="text" id="seletorPesquisa" placeholder="Pesquisar..." class="seletor-pesquisa">
+                                </div>
+                                <li class="opcao" data-valor="macbook-air-m2">MacBook Air M2</li>
+                                <li class="opcao" data-valor="macbook-air-m1">MacBook Air M1</li>
+                                <li class="opcao" data-valor="macbook-pro-m2">MacBook Pro M2</li>
+                                <li class="opcao" data-valor="macbook-pro-m1-pro-m1-max">MacBook Pro M1 Pro/M1 Max</li>
+                                <li class="opcao" data-valor="macbook-pro-intel">MacBook Pro Intel</li>
+                                <li class="opcao" data-valor="outros">Outros</li>
+                              </ul>
+                            </div>
+                          </div>                                               
                           <a href="#" class="btn btn-sm text-light bg-dark mt-4"><i class="fa-brands fa-whatsapp me-2"></i>Falar com especialista</a>
                         </div>
                     </div>
@@ -73,13 +85,26 @@
                     <div class="card card-item-assistencia-tecnica">
                         <img src="./img/ipad.png" class="card-img-top" alt="Imagem do ipad">
                         <div class="card-body">
-                          <h5 class="card-title">Ipad</h5>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected class="text-center">Selecione o modelo</option>
-                            <option value="1" class="text-center">One</option>
-                            <option value="2" class="text-center">Two</option>
-                            <option value="3" class="text-center">Three</option>
-                          </select>
+                          <h5 class="card-title text-uppercase">Ipad</h5>
+                          <div class="seletor-personalizado-container">
+                            <div class="seletor-personalizado" id="seletorPersonalizado">
+                              <span class="seletor-placeholder">Selecione o modelo</span>
+                              <i class="fa-solid fa-chevron-down seta-baixo"></i>
+                              <i class="fa-solid fa-angle-up seta-cima"></i>
+                              <ul class="seletor-opcoes">
+                                <div class="seletor-pesquisa-container">
+                                    <input type="text" id="seletorPesquisa" placeholder="Pesquisar..." class="seletor-pesquisa">
+                                </div>
+                                <li class="opcao" data-valor="ipad-pro-11">iPad Pro 11"</li>
+                                <li class="opcao" data-valor="ipad-pro-12-9">iPad Pro 12.9"</li>
+                                <li class="opcao" data-valor="ipad-air-4">iPad Air 4ª geração</li>
+                                <li class="opcao" data-valor="ipad-air-5">iPad Air 5ª geração</li>
+                                <li class="opcao" data-valor="ipad-9">iPad 9ª geração</li>
+                                <li class="opcao" data-valor="ipad-mini-6">iPad Mini 6ª geração</li>
+                                <li class="opcao" data-valor="outros">Outros</li>
+                              </ul>
+                            </div>
+                          </div> 
                           <a href="#" class="btn btn-sm text-light bg-dark mt-4"><i class="fa-brands fa-whatsapp me-2"></i>Falar com especialista</a>
                         </div>
                     </div>
@@ -88,13 +113,45 @@
                     <div class="card card-item-assistencia-tecnica">
                         <img src="./img/iphone.png" class="card-img-top" alt="Imagem do iphone">
                         <div class="card-body">
-                          <h5 class="card-title">Iphone</h5>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected class="text-center">Selecione o modelo</option>
-                            <option value="1" class="text-center">One</option>
-                            <option value="2" class="text-center">Two</option>
-                            <option value="3" class="text-center">Three</option>
-                          </select>
+                          <h5 class="card-title text-uppercase">Iphone</h5>
+                          <div class="seletor-personalizado-container">
+                            <div class="seletor-personalizado" id="seletorPersonalizado">
+                              <span class="seletor-placeholder">Selecione o modelo</span>
+                              <i class="fa-solid fa-chevron-down seta-baixo"></i>
+                              <i class="fa-solid fa-angle-up seta-cima"></i>
+                              <ul class="seletor-opcoes">
+                                <div class="seletor-pesquisa-container">
+                                    <input type="text" id="seletorPesquisa" placeholder="Pesquisar..." class="seletor-pesquisa">
+                                </div>
+                                <li class="opcao" data-valor="iphone-15">iPhone 15</li>
+                                <li class="opcao" data-valor="iphone-15-plus">iPhone 15 Plus</li>
+                                <li class="opcao" data-valor="iphone-15-pro">iPhone 15 Pro</li>
+                                <li class="opcao" data-valor="iphone-15-pro-max">iPhone 15 Pro Max</li>
+                                <li class="opcao" data-valor="iphone-14">iPhone 14</li>
+                                <li class="opcao" data-valor="iphone-14-plus">iPhone 14 Plus</li>
+                                <li class="opcao" data-valor="iphone-14-pro">iPhone 14 Pro</li>
+                                <li class="opcao" data-valor="iphone-14-pro-max">iPhone 14 Pro Max</li>
+                                <li class="opcao" data-valor="iphone-13">iPhone 13</li>
+                                <li class="opcao" data-valor="iphone-13-mini">iPhone 13 Mini</li>
+                                <li class="opcao" data-valor="iphone-13-pro">iPhone 13 Pro</li>
+                                <li class="opcao" data-valor="iphone-13-pro-max">iPhone 13 Pro Max</li>
+                                <li class="opcao" data-valor="iphone-12">iPhone 12</li>
+                                <li class="opcao" data-valor="iphone-12-mini">iPhone 12 Mini</li>
+                                <li class="opcao" data-valor="iphone-12-pro">iPhone 12 Pro</li>
+                                <li class="opcao" data-valor="iphone-12-pro-max">iPhone 12 Pro Max</li>
+                                <li class="opcao" data-valor="iphone-se-3">iPhone SE (3ª geração)</li>
+                                <li class="opcao" data-valor="iphone-se-2">iPhone SE (2ª geração)</li>
+                                <li class="opcao" data-valor="iphone-11">iPhone 11</li>
+                                <li class="opcao" data-valor="iphone-11-pro">iPhone 11 Pro</li>
+                                <li class="opcao" data-valor="iphone-11-pro-max">iPhone 11 Pro Max</li>
+                                <li class="opcao" data-valor="iphone-xr">iPhone XR</li>
+                                <li class="opcao" data-valor="iphone-x">iPhone X</li>
+                                <li class="opcao" data-valor="iphone-8">iPhone 8</li>
+                                <li class="opcao" data-valor="iphone-8-plus">iPhone 8 Plus</li>
+                                <li class="opcao" data-valor="outros">Outros</li>
+                              </ul>
+                            </div>
+                          </div>  
                           <a href="#" class="btn btn-sm text-light bg-dark mt-4"><i class="fa-brands fa-whatsapp me-2"></i>Falar com especialista</a>
                         </div>
                     </div>

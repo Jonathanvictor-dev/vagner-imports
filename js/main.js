@@ -113,3 +113,72 @@ if (botoesEspecialista) {
     });
 };
 
+document.querySelectorAll('.seletor-personalizado').forEach(seletorPersonalizado => {
+    const seletorPlaceholder = seletorPersonalizado.querySelector('.seletor-placeholder');
+    const listaOpcoes = seletorPersonalizado.querySelector('.seletor-opcoes');
+    const opcoes = listaOpcoes.querySelectorAll('.opcao');
+    const seletorPesquisa = seletorPersonalizado.querySelector('.seletor-pesquisa');
+  
+    seletorPersonalizado.addEventListener('click', function(event) {
+      if (!event.target.classList.contains('opcao') && !event.target.classList.contains('seletor-pesquisa')) {
+        seletorPersonalizado.classList.toggle('ativo');
+        seletorPesquisa.value = '';  
+        filtrarOpcoes('');  
+        toggleSeta(seletorPersonalizado);
+      }
+    });
+  
+    opcoes.forEach(opcao => {
+      opcao.addEventListener('click', function() {
+        const valorSelecionado = this.dataset.valor;
+        const textoSelecionado = this.textContent;
+        
+        seletorPlaceholder.textContent = textoSelecionado;
+  
+        seletorPersonalizado.classList.remove('ativo');
+        
+        console.log('Valor selecionado:', valorSelecionado);
+        toggleSeta(seletorPersonalizado);
+      });
+    });
+  
+    seletorPesquisa.addEventListener('input', function() {
+      const termoPesquisa = seletorPesquisa.value.toLowerCase();
+      filtrarOpcoes(termoPesquisa);
+    });
+  
+    function filtrarOpcoes(termo) {
+      opcoes.forEach(opcao => {
+        const textoOpcao = opcao.textContent.toLowerCase();
+        if (textoOpcao.includes(termo)) {
+          opcao.style.display = 'block';
+        } else {
+          opcao.style.display = 'none';
+        }
+      });
+    }
+  
+    function toggleSeta(seletor) {
+      const setaBaixo = seletor.querySelector('.seta-baixo');
+      const setaCima = seletor.querySelector('.seta-cima');
+      
+      if (seletor.classList.contains('ativo')) {
+        setaBaixo.style.display = 'none';
+        setaCima.style.display = 'block';
+      } else {
+        setaBaixo.style.display = 'block';
+        setaCima.style.display = 'none';
+      }
+    }
+  });
+  
+  // Fecha o seletor ao clicar fora dele
+  document.addEventListener('click', function(event) {
+    document.querySelectorAll('.seletor-personalizado.ativo').forEach(seletor => {
+      if (!seletor.contains(event.target)) {
+        seletor.classList.remove('ativo');
+        toggleSeta(seletor);
+      }
+    });
+  });
+  
