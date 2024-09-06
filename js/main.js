@@ -118,6 +118,7 @@ document.querySelectorAll('.seletor-personalizado').forEach(seletorPersonalizado
     const listaOpcoes = seletorPersonalizado.querySelector('.seletor-opcoes');
     const opcoes = listaOpcoes.querySelectorAll('.opcao');
     const seletorPesquisa = seletorPersonalizado.querySelector('.seletor-pesquisa');
+    const botaoWhatsApp = seletorPersonalizado.closest('.card-item-assistencia-tecnica').querySelector('.btn');
   
     seletorPersonalizado.addEventListener('click', function(event) {
       if (!event.target.classList.contains('opcao') && !event.target.classList.contains('seletor-pesquisa')) {
@@ -139,6 +140,9 @@ document.querySelectorAll('.seletor-personalizado').forEach(seletorPersonalizado
         
         console.log('Valor selecionado:', valorSelecionado);
         toggleSeta(seletorPersonalizado);
+  
+        // Atualiza o link do WhatsApp quando uma opção é selecionada
+        atualizarLinkWhatsApp(seletorPersonalizado, textoSelecionado);
       });
     });
   
@@ -154,9 +158,9 @@ document.querySelectorAll('.seletor-personalizado').forEach(seletorPersonalizado
           opcao.style.display = 'block';
         } else {
           opcao.style.display = 'none';
-        }
+        };
       });
-    }
+    };
   
     function toggleSeta(seletor) {
       const setaBaixo = seletor.querySelector('.seta-baixo');
@@ -168,17 +172,28 @@ document.querySelectorAll('.seletor-personalizado').forEach(seletorPersonalizado
       } else {
         setaBaixo.style.display = 'block';
         setaCima.style.display = 'none';
-      }
-    }
+      };
+    };
+  
+    function atualizarLinkWhatsApp(seletor, modeloSelecionado) {
+        const tituloServico = seletor.closest('.card-item-assistencia-tecnica').querySelector('.card-title').textContent;
+        const numeroTelefone = '5582996043922';
+        const mensagem = `Olá, gostaria de informações sobre o ${modeloSelecionado}.`;
+        const linkWhatsApp = `https://wa.me/${numeroTelefone}?text=${encodeURIComponent(mensagem)}`;
+        botaoWhatsApp.setAttribute('href', linkWhatsApp);
+        botaoWhatsApp.setAttribute('target', '_blank'); 
+      };
   });
   
-  // Fecha o seletor ao clicar fora dele
-  document.addEventListener('click', function(event) {
-    document.querySelectorAll('.seletor-personalizado.ativo').forEach(seletor => {
-      if (!seletor.contains(event.target)) {
-        seletor.classList.remove('ativo');
-        toggleSeta(seletor);
-      }
-    });
-  });
+  
+// Fecha o seletor ao clicar fora dele
+document.addEventListener('click', function(event) {
+document.querySelectorAll('.seletor-personalizado.ativo').forEach(seletor => {
+    if (!seletor.contains(event.target)) {
+    seletor.classList.remove('ativo');
+    toggleSeta(seletor);
+    }
+});
+});
+
   
