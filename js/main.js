@@ -194,19 +194,6 @@ document.querySelectorAll('.seletor-personalizado.ativo').forEach(seletor => {
 });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const loadingElement = document.getElementById('loading');
-  if (loadingElement) {
-    loadingElement.style.display = 'flex'; 
-  }
-});
-
-window.addEventListener('load', function () {
-  const loadingElement = document.getElementById('loading');
-  if (loadingElement) {
-    loadingElement.style.display = 'none';
-  }
-});
 
 
 
