@@ -237,6 +237,35 @@ body {
     opacity: 0.8;
 }
 
+/* Loading */
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff80;
+    z-index: 10000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    border: 8px solid #000000; 
+    border-top: 8px solid #ca9d40; 
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Animação para o spinner */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
 /* Btn whatsapp */
 
 .btn-whats {
@@ -347,6 +376,12 @@ body {
         transform: translateX(-50%);
     }
 }
+
+/* Animação para o spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 /* Ajuste do layout responsivo */
 

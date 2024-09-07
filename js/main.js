@@ -184,9 +184,7 @@ document.querySelectorAll('.seletor-personalizado').forEach(seletorPersonalizado
         botaoWhatsApp.setAttribute('target', '_blank'); 
       };
   });
-  
-  
-// Fecha o seletor ao clicar fora dele
+
 document.addEventListener('click', function(event) {
 document.querySelectorAll('.seletor-personalizado.ativo').forEach(seletor => {
     if (!seletor.contains(event.target)) {
@@ -195,5 +193,21 @@ document.querySelectorAll('.seletor-personalizado.ativo').forEach(seletor => {
     }
 });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const loadingElement = document.getElementById('loading');
+  if (loadingElement) {
+    loadingElement.style.display = 'flex'; 
+  }
+});
+
+window.addEventListener('load', function () {
+  const loadingElement = document.getElementById('loading');
+  if (loadingElement) {
+    loadingElement.style.display = 'none';
+  }
+});
+
+
 
   
