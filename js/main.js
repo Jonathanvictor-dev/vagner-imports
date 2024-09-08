@@ -15,6 +15,16 @@ function formatTelefone(telefone) {
     return telefone;
 };
 
+window.addEventListener('onload', carregamento());
+
+function carregamento() {
+    const containerLoading = document.querySelector('#loading');
+
+    if(containerLoading) {
+      containerLoading.style.display = 'none';
+    };
+};
+
 if (document.getElementById('cpf')) {
     document.getElementById('cpf').addEventListener('input', function () {
         this.value = formatCPF(this.value);

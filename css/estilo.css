@@ -245,7 +245,7 @@ body {
     height: 100%;
     background: #ffffff80;
     z-index: 10000; 
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -258,13 +258,6 @@ body {
     height: 3rem;
     animation: spin 2s linear infinite;
   }
-  
-  /* Animação para o spinner */
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
 
 /* Btn whatsapp */
 
