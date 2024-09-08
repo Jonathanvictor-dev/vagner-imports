@@ -20,9 +20,11 @@ window.addEventListener('onload', carregamento());
 function carregamento() {
     const containerLoading = document.querySelector('#loading');
 
-    if(containerLoading) {
-      containerLoading.style.display = 'none';
-    };
+    setInterval(() => {
+      if(containerLoading) {
+        containerLoading.style.display = 'none';
+      };
+    }, 600);
 };
 
 if (document.getElementById('cpf')) {
