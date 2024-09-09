@@ -75,10 +75,13 @@ body {
     transition: .4s;
 }
 
-
 .nav-dropdown:hover,
 .nav-dropdown.active {
     opacity: 0.7;
+}
+
+.dropdown-menu {
+    background-color: #ca9d40;
 }
 
 /* main */
@@ -395,6 +398,7 @@ body {
 @media screen and (max-width: 576px) {
     .navbar-nav {
         flex-direction: column !important;
+        align-items: center;
     }
 
     .dropdown {
@@ -451,7 +455,8 @@ body {
 
 @media screen and (max-width: 768px) {
     a.nav-link,
-    button.nav-link {
+    button.nav-link,
+    .nav-dropdown {
         font-size: 0.7rem !important;
     }
 
