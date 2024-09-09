@@ -72,13 +72,16 @@ body {
     border-radius: 0.5rem !important;
     padding: 0.5rem;
     background-color: #ca9d40 !important;
+    color: #000000 !important;
     transition: .4s;
 }
 
+ul.dropdown-menu,
 ul.dropdown-menu.show {
     --bs-dropdown-link-active-bg: transparent !important;
     --bs-dropdown-link-hover-bg: #0000001a !important;
     --bs-dropdown-link-active-color: transparent !important;
+    color: #000000 !important;
 }
 
 .nav-dropdown:hover,
@@ -410,6 +413,11 @@ ul.dropdown-menu.show {
     .navbar-nav {
         flex-direction: column !important;
         align-items: center;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
     }
 
     .dropdown {
