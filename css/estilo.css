@@ -67,6 +67,20 @@ body {
     width: 100%;
 }
 
+.nav-dropdown {
+    border: none !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem;
+    background-color: #ca9d40 !important;
+    transition: .4s;
+}
+
+
+.nav-dropdown:hover,
+.nav-dropdown.active {
+    opacity: 0.7;
+}
+
 /* main */
 
 .container-principal {
